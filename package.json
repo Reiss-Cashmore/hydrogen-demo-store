@@ -5,15 +5,16 @@
   "version": "2.1.6",
   "type": "module",
   "scripts": {
-    "dev": "shopify hydrogen dev --codegen",
     "build": "shopify hydrogen build --codegen",
-    "preview": "npm run build && shopify hydrogen preview",
+    "dev": "shopify hydrogen dev --codegen",
+    "preview": "shopify hydrogen preview --build",
+    "lint": "eslint --no-error-on-unmatched-pattern .",
+    "typecheck": "react-router typegen && tsc --noEmit",
+    "codegen": "shopify hydrogen codegen && react-router typegen",
     "e2e": "npx playwright test",
     "e2e:ui": "npx playwright test --ui",
-    "lint": "eslint --no-error-on-unmatched-pattern --ext .js,.ts,.jsx,.tsx .",
     "format": "prettier --write --ignore-unknown .",
-    "format:check": "prettier --check --ignore-unknown .",
-    "typecheck": "tsc --noEmit"
+    "format:check": "prettier --check --ignore-unknown ."
   },
   "browserslist": [
     "defaults"
