@@ -41,6 +41,9 @@
     "typographic-base": "^1.0.4"
   },
   "devDependencies": {
+    "@eslint/compat": "^1.2.5",
+    "@eslint/eslintrc": "^3.2.0",
+    "@eslint/js": "^9.18.0",
     "@graphql-codegen/cli": "^5.0.2",
     "@playwright/test": "^1.48.2",
     "@remix-run/dev": "^2.15.3",
